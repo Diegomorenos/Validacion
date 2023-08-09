@@ -3,6 +3,10 @@
     margin: 0px;
 }
 
+.title{
+    font-family: 'Rajdhani', sans-serif;
+}
+
 .carousel-item img{
     height: 380px;
     object-fit: cover;
