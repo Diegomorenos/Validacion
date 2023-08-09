@@ -2,3 +2,34 @@
     padding: 0px;
     margin: 0px;
 }
+
+.carousel-item img{
+    height: 380px;
+    object-fit: cover;
+}
+
+section{
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card{
+    margin-top: 5%;
+    width: 18rem;
+}
+
+.card img{
+    object-fit: cover;
+    height: 300px;
+    margin-top: -30px;
+}
+
+.btnLogin{
+    margin: 20px;
+}
+
+h1{
+    text-align: center;
+}
