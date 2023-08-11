@@ -16,37 +16,28 @@
         </div>
     </header>
     <div class="card bg-warning container w-50">
-        <form class="row g-3 was-validated">
+        <form class="row g-3 was-validated" id="sesion" name="sesion">
 
             <div class="col-md-8">
-              <label for="validationCustom01" class="form-label">Usuario</label>
-              <input type="text" class="form-control" id="validationCustom01" placeholder="Digite nombre de usuario" required>
-              <div class="invalid-feedback">
-                Campo requerido!
-              </div>
+              <label for="sesion" class="form-label">Usuario</label>
+              <input type="text" class="form-control" id="user" placeholder="Digite nombre de usuario" required>
             </div>
             <div class="col-md-8">
-              <label for="" class="form-label">Contraseña</label>
-              <div class="input-group has-validation">
-                <input type="password" class="form-control" id="password" aria-describedby="passwordHelpBlock" placeholder="Digite su contraseña" required>
-                <div class="invalid-feedback">
-                  Campo requerido!
-                </div>
+              <label for="sesion" class="form-label">Contraseña</label>
+              <div class="input-group">
+                <input type="password" class="form-control" id="password" placeholder="Digite su contraseña" required>
               </div>
             </div>
             <div class="col-12">
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                <label class="form-check-label" for="invalidCheck">
+                <input class="form-check-input" type="checkbox" id="check" required>
+                <label class="form-check-label" for="sesion">
                   Acepto terminos y condiciones.
                 </label>
-                <div class="invalid-feedback">
-                  Acepta para continuar.
-                </div>
               </div>
             </div>
             <div class="col-12">
-              <button class="btnLogin btn btn-dark" type="submit" onclick="contrasena()">Continuar</button>
+              <button class="btnLogin btn btn-dark" id="btnLogin" type="" onclick="contrasena()">Continuar</button>
               <p>¿No tienes una cuenta? <a class="text-black" href="registro.html">...Crear una cuenta</a></p>
             </div>
           </form>
@@ -56,15 +47,6 @@
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit voluptas nesciunt, doloremque eum animi eligendi placeat soluta obcaecati voluptates fugit, quasi impedit accusamus eius dolor quidem exercitationem est temporibus voluptate!</p>
     </footer>
 </body>
-<script 
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous">
-</script>
-<script>
-function contrasena() {
-  var pass = document.getElementById("password").value;
-  if (pass.length <= 8){
-    alert("paila");
-  }
-}
-</script>
+
+<script src="js/funciones.js"></script>
 </html>

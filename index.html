@@ -31,13 +31,13 @@
               </span>
               <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Categorias...">
               <datalist id="datalistOptions">
-                <option value="Seinen">
+                <option value="Seinen" id="seinen">
                 <option value="Isekai">
                 <option value="Shoujo">
                 <option value="Shonen">
               </datalist>
             </div>
-            <button class="btn btn-outline-dark" type="submit">Buscar</button>
+            <button class="btn btn-outline-dark" type="submit" onclick="Buscar()">Buscar</button>
           </form>
         </div>
       </nav>    
@@ -82,18 +82,48 @@
     </button>
   </div>
 </div>
-<section>
-<div class="card bg-warning">
-  <p class="card-body text-muted small">Shonen</p>
+<section id="Shonen">
+<div class="card bg-warning" >
+  <p class="card-body text-muted small"></p>
   <img src="imagenes/drstone.webp" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Dr. Stone</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a target="_blank" href="https://www.youtube.com/watch?v=mYSS78eKIEE&pp=ygUIZHIgc3RvbmU%3D" class="btn btn-dark">Ver ahora</a>
+  </div>
+</div>
+<div class="card bg-warning">
+  <p class="card-body text-muted small"></p>
+  <img src="imagenes/naruto.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Naruto</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a target="_blank" href="https://www.youtube.com/watch?v=epxY5ySP7pM&pp=ygUOdHJhaWxlciBuYXJ1dG8%3D" class="btn btn-dark">Ver ahora</a>
+  </div>
+</div>
+<div class="card bg-warning">
+  <p class="card-body text-muted small"></p>
+  <img src="imagenes/hunter-x-hunter-10-anos.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Hunter x Hunter</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     <a href="#" class="btn btn-dark">Ver ahora</a>
   </div>
 </div>
 <div class="card bg-warning">
-  <p class="card-body text-muted small">Seinen</p>
+  <p class="card-body text-muted small"></p>
+  <img src="imagenes/Dragon-Ball-Z.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Dragon Ball Z</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-dark">Ver ahora</a>
+  </div>
+</div>
+</section>
+
+<section id="Seinen">
+<div class="card bg-warning">
+  <p class="card-body text-muted small"></p>
   <img src="imagenes/codegeass.jpe" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Code Geass</h5>
@@ -102,7 +132,25 @@
   </div>
 </div>
 <div class="card bg-warning">
-  <p class="card-body text-muted small">Seinen</p>
+  <p class="card-body text-muted small"></p>
+  <img src="imagenes/attacd.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Attack on Titan</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-dark">Ver ahora</a>
+  </div>
+</div>
+<div class="card bg-warning">
+  <p class="card-body text-muted small"></p>
+  <img src="imagenes/vinland.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Vinland Saga</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-dark">Ver ahora</a>
+  </div>
+</div>
+<div class="card bg-warning">
+  <p class="card-body text-muted small"></p>
   <img src="imagenes/Death_Note.webp" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Death Note</h5>
@@ -110,8 +158,11 @@
     <a href="#" class="btn btn-dark">Ver ahora</a>
   </div>
 </div>
+</section>
+
+<section id="Isekai">
 <div class="card bg-warning">
-  <p class="card-body text-muted small">Shonen Isekai</p>
+  <p class="card-body text-muted small"></p>
   <img src="imagenes/Inuyasha_portada.webp" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Inuyasha</h5>
@@ -120,16 +171,37 @@
   </div>
 </div>
 <div class="card bg-warning">
-  <p class="card-body text-muted small">Shonen</p>
-  <img src="imagenes/naruto.webp" class="card-img-top" alt="...">
+  <p class="card-body text-muted small"></p>
+  <img src="imagenes/Konosuba3Fs_Blessing_on_This_Wonderful_World.webp" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">Naruto</h5>
+    <h5 class="card-title">Konosuba</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     <a href="#" class="btn btn-dark">Ver ahora</a>
   </div>
 </div>
 <div class="card bg-warning">
-  <p class="card-body text-muted small">Shoujo</p>
+  <p class="card-body text-muted small"></p>
+  <img src="imagenes/rezero.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Re-Zero</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-dark">Ver ahora</a>
+  </div>
+</div>
+<div class="card bg-warning">
+  <p class="card-body text-muted small"></p>
+  <img src="imagenes/SAO_Alicization_-Poster.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Sword Art Online</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-dark">Ver ahora</a>
+  </div>
+</div>
+</section>
+
+<section id="Shoujo">
+<div class="card bg-warning">
+  <p class="card-body text-muted small"></p>
   <img src="imagenes/saku.jpe" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Sakura Card Captor</h5>
@@ -138,7 +210,7 @@
   </div>
 </div>
 <div class="card bg-warning">
-  <p class="card-body text-muted small">Shoujo</p>
+  <p class="card-body text-muted small"></p>
   <img src="imagenes/samoon.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Sailor Moon</h5>
@@ -147,15 +219,25 @@
   </div>
 </div>
 <div class="card bg-warning">
-  <p class="card-body text-muted small">Seinen</p>
-  <img src="imagenes/vinland.jpg" class="card-img-top" alt="...">
+  <p class="card-body text-muted small"></p>
+  <img src="imagenes/madoka.jpg" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">Vinland Saga</h5>
+    <h5 class="card-title">Madoka Magica</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-dark">Ver ahora</a>
+  </div>
+</div>
+<div class="card bg-warning">
+  <p class="card-body text-muted small"></p>
+  <img src="imagenes/magicn.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Magic Knight</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     <a href="#" class="btn btn-dark">Ver ahora</a>
   </div>
 </div>
 </section>
+
 <footer class="container-xxl bg-warning card">
   <h1 class="title">Footer</h1>
   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit voluptas nesciunt, doloremque eum animi eligendi placeat soluta obcaecati voluptates fugit, quasi impedit accusamus eius dolor quidem exercitationem est temporibus voluptate!</p>
@@ -166,4 +248,5 @@
 src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous">
 </script>
 
+<script src="js/funciones.js"></script>
 </html>
